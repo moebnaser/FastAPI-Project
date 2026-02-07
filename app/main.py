@@ -24,7 +24,7 @@ app.include_router(vote.router)
 
 @app.get("/") #path from the domain name of the service google.com/
 def root():
-    return ("Hello, HOME PAGE!!")
+    return ("Hello, HOME PAGE!! We Made it")
 
 
 
