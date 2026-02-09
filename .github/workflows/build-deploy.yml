@@ -97,7 +97,7 @@ jobs:
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
 
-      - name: Deploy to ubunto server
+      - name: Deploy to ubuntu server
         uses: appleboy/ssh-action@master
         with:
           host: ${{secrets.UBUNTO_HOST}}
@@ -106,7 +106,7 @@ jobs:
           script: |
             cd app/src
             git pull
-            echo ${{UBUNTO_PASSWORD}}} | sudo -S systemctl restart api
+            echo ${{secrets.UBUNTO_PASSWORD}}} | sudo -S systemctl restart api
 
 
 
