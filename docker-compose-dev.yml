@@ -1,6 +1,6 @@
 services: 
   api:
-    image: moebnaser/fastapi
+    build: .
     depends_on:
       postgres:
         condition: service_healthy
