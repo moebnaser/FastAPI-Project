@@ -1,7 +1,7 @@
 
 # Backend service using FastAPI (Python) for a social media app prototype 
 
-## KEY TERMS: (FastAPI, JWT, outh2, SqlAlchemy, Alembic migration, PostgresSql, )
+## KEY TERMS: (FastAPI, JWT, outh2, SqlAlchemy, Alembic migration, PostgresSql, Server side application, Backend, WebAPI)
 
 ## Project Contents:
 
@@ -53,5 +53,5 @@ ALGORITHM = HS256
 ACCESS_TOKEN_EXPIRE_MINUTES = 60(base)
 ````
 ### Note: SECRET_KEY in this exmple is just a psudo key. You need to get a key for youself and you can get the SECRET_KEY  from fastapi documantion
-### Here is the link of the playlist on youtube you can learn all about FASTAPI
+
  
