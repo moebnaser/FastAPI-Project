@@ -103,10 +103,10 @@ jobs:
           host: ${{secrets.UBUNTO_HOST}}
           username: ${{secrets.UBUNTO_USERNAME}}
           password: ${{secrets.UBUNTO_PASSWORD}}
-          steps: |
+          script: |
             cd app/src
             git pull
-            sudo systemctl restart api
+            echo ${{UBUNTO_PASSWORD}}} | sudo -S systemctl restart api
 
 
 
