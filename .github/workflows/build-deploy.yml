@@ -58,7 +58,7 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
         
-      - name: Seu up Docker Build
+      - name: Set up Docker Build
         id: buildx
         uses: docker/setup-buildx-action@v1
 
@@ -70,6 +70,10 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{secrets.DOCKER_HUB_USERNAME}}/fastapi_cd:latest
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest}}
 
 
 
