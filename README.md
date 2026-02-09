@@ -1,7 +1,7 @@
 
-# Backend service using FastAPI (Python) for a social media app prototype 
+# FastAPI Server Side API for a Social Media APP Prototype 
 
-## KEY TERMS: (FastAPI, JWT, outh2, SqlAlchemy, Alembic migration, PostgresSql, Server side application, Backend, WebAPI)
+## KEY TERMS: (FastAPI, JWT, outh2, SqlAlchemy, Alembic migration, PostgresSql, Server side application, Backend, WebAPI, RESTFUL, CRUD)
 
 ## Project Contents:
 
