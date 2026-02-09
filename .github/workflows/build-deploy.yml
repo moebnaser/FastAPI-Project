@@ -100,13 +100,13 @@ jobs:
       - name: Deploy to ubuntu server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.UBUNTU_HOST }}
-          username: ${{ secrets.UBUNTU_USERNAME }}
-          password: ${{ secrets.UBUNTU_PASSWORD }}
+          host: ${{ secrets.UBUNTO_HOST }}
+          username: ${{ secrets.UBUNTO_USERNAME }}
+          password: ${{ secrets.UBUNTO_PASSWORD }}
           script: |
             cd app/src
             git pull
-            echo "${{ secrets.UBUNTU_PASSWORD }}" | sudo -S systemctl restart api
+            echo "${{ secrets.UBUNTO_PASSWORD }}" | sudo -S systemctl restart api
 
 
 
