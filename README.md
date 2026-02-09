@@ -5,7 +5,7 @@
 
 ## Project Contents:
 
-###- FastAPI with 4 routes
+### - FastAPI with 4 routes
  1) Posts route: This route is reponsible for creating post, deleting post, updating post and Checking posts
  2) Users route: This route is about creating users and searching user by id
  3) Auth route: This route is about login system and authentication
